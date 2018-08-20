@@ -7,15 +7,15 @@ public class App {
 
     List<Student> students = Arrays.asList(
         new Student(1, "Jose", "Hernandez", 23),
-        new Student(2, "Daniel", "Perez", 43), 
+        new Student(2, "Daniel", "Perez", 13), 
         new Student(3, "Rafael", "Brito", 12),
         new Student(4, "Miguel", "Ureña", 19), 
-        new Student(5, "Victor", "Arias", 52),
-        new Student(6, "Maria", "Perez", 52), 
-        new Student(7, "Cesar", "Dominguez", 52),
-        new Student(8, "Arnold", "Trujillo", 52), 
-        new Student(9, "Luis", "Mancebo", 52),
-        new Student(10, "Daniela", "Abreu", 52)
+        new Student(5, "Victor", "Arias", 17),
+        new Student(6, "Maria", "Perez", 25), 
+        new Student(7, "Cesar", "Dominguez", 32),
+        new Student(8, "Arnold", "Trujillo", 22), 
+        new Student(9, "Luis", "Mancebo", 16),
+        new Student(10, "Daniela", "Abreu", 20)
     );
 
     App(){
