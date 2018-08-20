@@ -1,3 +1,3 @@
 # Practica 0
 
-<img src="practica-0.png" alt="drawing" width="600px"/>
+<img src="practica-0.png" alt="drawing" width="680px"/>
