@@ -18,7 +18,7 @@ public class App {
         new Student(10, "Daniela", "Abreu", 52)
     );
 
-    public App(){
+    App(){
         System.out.println("1. Total de estudiantes: " + students.size() );
         System.out.println("2. Edad minima: " + getMinAge() );
         System.out.println("3. Edad maxima: " + getMaxAge() );
@@ -41,23 +41,19 @@ public class App {
     }
 
     void getAllStudents(){
-        printCell("ID");
-        printCell("NOMBRE");
-        printCell("APELLIDO");
-        printCell("EDAD");
-        System.out.print("|\n");
+        printRow("ID", "NOMBRE", "APELLIDO", "EDAD");
         students.forEach(s -> {
-            printCell(String.valueOf(s.getId())); 
-            printCell(s.getName()); 
-            printCell(s.getLastName()); 
-            printCell(String.valueOf(s.getAge())); 
-            System.out.print("|\n");
+            printRow(String.valueOf(s.getId()), s.getName(), s.getLastName(), String.valueOf(s.getAge()));
         });
     }
 
+    void printRow(String... cells){
+        for(String cell: cells) printCell(cell);
+        System.out.print("|\n");
+    }
+
     void printCell(String word){
-        String tt = (word.length()>=7)?"\t":"\t\t";
-        System.out.print("|"+word+tt);
+        System.out.print("|"+word + ((word.length()>=7) ?"\t":"\t\t"));
     }
 
     public static void main(String[] args) {
