@@ -1,3 +1,3 @@
 # Practica 0
 
-![Result](practica-0.png =200x)
+<img src="practica-0.png" alt="drawing" width="200px"/>
