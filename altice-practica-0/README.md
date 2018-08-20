@@ -1,3 +1,3 @@
 # Practica 0
 
-![Result](practica-0.png?s=100)
+![Result](practica-0.png =200x)
