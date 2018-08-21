@@ -48,12 +48,10 @@ public class App {
     }
 
     void printRow(String... cells){
-        for(String cell: cells) printCell(cell);
-        System.out.print("|\n");
-    }
+        for(String cell: cells) 
+            System.out.print("|"+cell + ((cell.length()>=7) ?"\t":"\t\t"));
 
-    void printCell(String word){
-        System.out.print("|"+word + ((word.length()>=7) ?"\t":"\t\t"));
+        System.out.print("|\n");
     }
 
     public static void main(String[] args) {
